@@ -1,0 +1,1 @@
+Dette er et lokalt repo for øving til å lage en portefølje.
