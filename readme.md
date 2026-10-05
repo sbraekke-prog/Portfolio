@@ -1,1 +1,1 @@
-Dette er et lokalt repo for øving til å lage en portefølje.
+Portefølje for Sindre Brække - Digital Markedsfører
