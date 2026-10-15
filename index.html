@@ -17,15 +17,27 @@
     <body>
         <header>
             <h1>Sindre Brække</h1>
+            <nav class="navigasjon">
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="menu-icon">
+                <span class="navicon"></span>
+                <span class="navicon"></span>
+                <span class="navicon"></span>
+            </label>
+                <ul class="meny">
+                    <li><a href="#prosjekter" onclick="document.getElementById('menu-toggle').checked = false;">Prosjekter</a></li>
+                    <li><a href="#ferdigheter" onclick="document.getElementById('menu-toggle').checked = false;">Ferdigheter</a></li>
+                </ul>
+                </nav>
         </header>
          <main>
         <section class="om-meg">
             <div class="hovedinnhold">
-                <p>Digital Markedsfører med fokus på webutvikling, SEO/SEM og performance.</p>
+                <p>Digital Markedsfører med erfaring og ferdigheter innen nettsider, e-postmarkedsføring, SEO, SEM og performance.</p>
             </div>
              <div class="forsidebilde"></div>
             </section>
-            <section class="Prosjekter">
+            <section class="Prosjekter">  
                 <div class="prosjekt-boks"></div>
                 <h2>Prosjekter</h2>
                 <div class="prosjekt-boks">
@@ -48,20 +60,30 @@
                  <h2>Ferdigheter</h2>
                 <section class="ferdigheter">
                     <div class="ferdigheter-ikon">
-                        <img src="img/webutvikling.png" alt="Webutvikling">
+                        <img src="img/webutvikling.png" alt="Wordpress">
                     </div>
                     <div class="ferdigheter-ikon">
-                        <img src="img/seo.png" alt="SEO/SEM">
+                        <img src="img/drupal.png" alt="Drupal">
                     </div>
                     <div class="ferdigheter-ikon">
-                        <img src="img/sem.png" alt="SEM">
+                        <img src="img/epostmarkedsføring.png" alt="Hubspot">
                     </div>
                     <div class="ferdigheter-ikon">
-                        <img src="img/performance.png" alt="Performance">
+                        <img src="img/google.png" alt="Google Search Console">
                     </div>
                     <div class="ferdigheter-ikon">
-                        <img src="img/digital-markedsføring.png" alt="Digital Markedsføring">
+                        <img src="img/seo.png" alt="Screaming Frog">
                     </div>
+                    <div class="ferdigheter-ikon">
+                        <img src="img/sem.png" alt="Google Ads">
+                    </div>
+                    <div class="ferdigheter-ikon">
+                        <img src="img/performance.png" alt="Meta">
+                    </div>
+                    <div class="ferdigheter-ikon">
+                        <img src="img/digital-markedsføring.png" alt="LinkedIn">
+                    </div>
+
             </section>
         </main>
     </body>

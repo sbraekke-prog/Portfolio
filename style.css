@@ -1,3 +1,135 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: outfit, sans-serif;
+    background-color: #0f0444;
+    color: #ffffff;
+}
+header {
+    padding: 20px;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+header nav {
+    margin-left: 20px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    color: #ffffff;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    align-items: center;
+}
+header nav ul li {
+    width: auto;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+header nav ul li a:hover {
+    color: #E1DBFF;
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+.menu-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    z-index: 20;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+.menu-icon .navicon {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+.meny {
+    position: fixed;
+    top: 20px;
+    right: -100%;
+    width: 200px;
+    height: auto;
+    background-color: #5E4FAB;
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    box-shadow: -5px 0px 15px #2E1F78;
+    border-radius: 15px 0px 0px 15px;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease-in-out;
+}
+.meny a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+.meny a:hover {
+    color: #E1DBFF;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+main h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+main p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.forsidebilde {
+    display: block;
+    max-width: 100%;
+    height: 100vh;
+    width: 100vh;
+    margin-bottom: 20px;
+    background-image: url('img/sindre_braekke.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
