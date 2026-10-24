@@ -1,12 +1,15 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: outfit, sans-serif;
     background-color: #0f0444;
     color: #ffffff;
 }
+
 header {
     padding: 20px;
     text-align: right;
@@ -14,13 +17,16 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 header h1 {
     font-size: 2.5rem;
     margin: 0;
 }
+
 header nav {
     margin-left: 20px;
 }
+
 header nav ul {
     list-style: none;
     display: flex;
@@ -31,18 +37,22 @@ header nav ul {
     width: auto;
     align-items: center;
 }
+
 header nav ul li {
     width: auto;
 }
+
 header nav ul li a {
     text-decoration: none;
     color: #ffffff;
     font-size: 1.2rem;
     transition: color 0.3s ease-in-out;
 }
+
 header nav ul li a:hover {
     color: #E1DBFF;
 }
+
 @media (max-width: 768px) {
     header {
         justify-content: center;
@@ -84,6 +94,7 @@ header nav ul li a:hover {
     cursor: pointer;
 
 }
+
 .menu-icon .navicon {
     display: block;
     width: 100%;
@@ -92,6 +103,7 @@ header nav ul li a:hover {
     border-radius: 2px;
     transition: all 0.3s ease-in-out;
 }
+
 .meny {
     position: fixed;
     top: 20px;
@@ -111,6 +123,7 @@ header nav ul li a:hover {
     align-items: center;
     transition: right 0.3s ease-in-out;
 }
+
 .meny a{
     color: #ffffff;
     text-decoration: none;
@@ -118,26 +131,21 @@ header nav ul li a:hover {
     font-weight: 500;
     transition: color 0.3s ease-in-out;
 }
+
 .meny a:hover {
     color: #E1DBFF;
 }
 
-main {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-}
 main h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
+
 main h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
 }
+
 main p {
     font-size: 1.2rem;
     line-height: 1.6;
@@ -151,8 +159,9 @@ main p {
     padding: 0;
     margin: 0;
     gap: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
+
 .om-meg {
     display: flex;
     flex: 1;
@@ -161,7 +170,9 @@ main p {
     color: #ffffff;
     font-size: 1.2rem;
     overflow: auto;
+    margin: 1.5rem;
 }
+
 .om-meg img {
     display: block;
     width: 100%;
@@ -174,27 +185,78 @@ main p {
     flex-shrink: 0;
 }
 .prosjekter {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem;
 }
+.prosjekter-bokser {
+    display: flex;
+    place-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
 .prosjekt-boks {
-    background-color: #5E4FAB;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    gap: 10px;
-    margin-bottom: 20px;
+    background-color: #E1DBFF;
+    height: 250px;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 3px 3px 12px 2px rgb(15 4 68 / 0.5);
+    transition: 0.2s;
+    cursor: pointer;
 }
+.prosjekt-boks:hover,
+.prosjekt-boks:focus-within {
+    transform: translateY(-2rem);
+}
+
 .ferdigheter {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
+    text-align: center;
+    margin: 3rem;
 }
-.ferdigheter-ikon {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+
+.ikon-galleri {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+
+}
+.ikon-galleri:before,
+.ikon-galleri:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+.ikon-galleri:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(15, 4, 68, 0), rgba(15,4,68,0));
+}
+.ikon-galleri:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(15,4,68,0), rgba(15,4,68,0));
+}
+.ikon-galleri:hover .ikon {
+    animation-play-state: paused;
+}
+.ikon {
+    animation: 10s ikoner infinite linear;
+    display: inline-block;
+}
+
+.ikon img {
+    height: 3.5rem;
+    width: auto;
+    margin: 0 40px;
+}
+@keyframes ikoner {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
