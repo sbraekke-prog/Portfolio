@@ -211,17 +211,126 @@ main p {
 }
 
 .ferdigheter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.ferdigheter h2 {
     text-align: center;
-    margin: 3rem;
+}
+.ferdigheter-gruppe {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    gap: 0.5rem;
+    align-items: center;
 }
 
+.ferdighet-tekst {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+
+.ferdighets-nivå {
+    box-sizing: content-box;
+    height: 10px;
+    width: 75%;
+    margin: 0px 10px;
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 5px;
+    box-shadow: inset 0 -1px 1px rgba(46, 31, 120, 0.5);
+}
+
+.ferdighets-nivå span {
+    display: block;
+    height: 100%;
+    border-radius: 20px 8px 8px 20px;
+    background-color: rgb(43 194 83);
+    background-image: linear-gradient(
+        to top,
+        rgb(43 194 83) 37%,
+        rgb(84 240 84) 69%
+    );
+    box-shadow:
+    inset 0 2px 9px rgb(15, 4, 68, 0.5),
+    inset 0 -2px 6px rgba(159, 146, 222, 0.2);
+    overflow: hidden;
+}
+.mørkeblå > span {
+    background-color: #0f0444;
+    background-image: linear-gradient(
+        to bottom, #0f0444, #0f0444
+    );
+}
+.blå > span {
+    background-color: #2E1F78;
+    background-image: linear-gradient(
+        to bottom, #2e1f78, #2e1f78
+    );
+}
+.blålilla > span {
+    background-color: #5E4FAB;
+    background-image: linear-gradient(
+        to bottom, #5E4FAB, #5E4FAB
+        );
+}
+.lyseblå > span {
+    background-color: #9f92de;
+    background-image: linear-gradient(
+        to bottom, #9f92de, #9f92de
+    );
+}
+.blåhvitt > span {
+    background-color: #e1dbff;
+    background-image: linear-gradient(
+        to bottom, #e1dbff, #e1dbff
+    );
+}
+
+.beskrivelse {
+    text-align: left;
+    width: 75%;
+    font-weight: bold; 
+}
+.beskrivelse p {
+    margin: 0;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.prosent {
+    text-align: right;
+    width: 75%;
+}
+.prosent p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.programmer {
+    text-align: center;
+}
 .ikon-galleri {
     overflow: hidden;
     padding: 60px 0;
     white-space: nowrap;
     position: relative;
+    margin: 3.5rem;
+}
+.ikon-galleri h3 {
+    margin-bottom: 2.5rem;
+    background-color: red;
+}
+
+.programmer-tittel {
+    margin-bottom: 2.5rem;
 
 }
+
 .ikon-galleri:before,
 .ikon-galleri:after {
     position: absolute;
@@ -239,11 +348,13 @@ main p {
     right: 0;
     background: linear-gradient(to right, rgba(15,4,68,0), rgba(15,4,68,0));
 }
-.ikon-galleri:hover .ikon {
+
+.ikon-galleri:hover .ikon{
     animation-play-state: paused;
 }
+
 .ikon {
-    animation: 10s ikoner infinite linear;
+    animation: 15s ikoner infinite linear;
     display: inline-block;
 }
 
