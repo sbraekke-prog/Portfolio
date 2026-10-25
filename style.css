@@ -61,6 +61,7 @@ header nav ul li a:hover {
     header nav ul {
         display: none;
     }
+    
     .menu-checkbox:checked + .menu-icon + .meny {
         right: 0;
     }
