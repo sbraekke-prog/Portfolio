@@ -89,7 +89,6 @@ header nav ul li a:hover {
         scroll-snap-align: center !important;
         width: auto !important;
     }
-
 }
 
 .menu-checkbox {
@@ -216,8 +215,8 @@ main p {
 
 .prosjekt-boks {
     background-color: #E1DBFF;
-    height: 250px;
-    width: 250px;
+    height: 350px;
+    width: 200px;
     border-radius: 0.5rem;
     padding: 1.5rem;
     box-shadow: 3px 3px 12px 2px rgb(15 4 68 / 0.5);
@@ -251,6 +250,7 @@ main p {
     justify-content: space-between;
     align-items: center;
     width: 75%;
+    gap: 1rem;
 }
 
 .ferdighets-nivå {
@@ -313,12 +313,14 @@ main p {
 .beskrivelse {
     text-align: left;
     width: 75%;
-    font-weight: bold; 
+    font-weight: bold;
+    font-size: 1rem; 
 }
 .beskrivelse p {
     margin: 0;
     text-align: left;
-    font-size: 1.5em;
+    font-size: clamp(0.85, 4vw, 1.1rem);
+    overflow-wrap: break-word;
 }
 
 .prosent {
@@ -327,7 +329,7 @@ main p {
 }
 .prosent p {
     margin: 0;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .programmer {
@@ -347,6 +349,7 @@ main p {
 .programmer-tittel {
     margin-bottom: 2.5rem;
     overflow-wrap: break-word;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
 
 .ikon-galleri:before,
