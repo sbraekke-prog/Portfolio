@@ -74,6 +74,9 @@ header nav ul li a:hover {
     .menu-checkbox:checked + .menu-icon .navicon:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+    .om-meg img {
+        object-fit: cover;
+    }
     .prosjekter-bokser {
         display: flex !important;
         flex-direction: row !important;
