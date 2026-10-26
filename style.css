@@ -348,8 +348,10 @@ main p {
 
 .programmer-tittel {
     margin-bottom: 2.5rem;
-    overflow-wrap: break-word;
     font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+.programmer-tittel h2 {
+    overflow-wrap: break-word;
 }
 
 .ikon-galleri:before,
