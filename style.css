@@ -76,6 +76,7 @@ header nav ul li a:hover {
     }
     .prosjekter-bokser {
         display: flex;
+        flex-direction: row;
         flex-wrap: nowrap;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -338,7 +339,7 @@ main p {
     padding: 60px 0;
     white-space: nowrap;
     position: relative;
-    margin: 3.5rem;
+    margin: 1.5rem;
 }
 .ikon-galleri h3 {
     margin-bottom: 2.5rem;
