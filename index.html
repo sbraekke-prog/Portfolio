@@ -61,23 +61,55 @@
         </section>
             <section id="prosjekter" class="prosjekter">
                 <h2>Prosjekter</h2>
-                <div class = prosjekter-bokser>
-                <div class="prosjekt-boks">
-                    <h3>Prosjekt 1</h3>
-                    <p>Beskrivelse av prosjekt 1.</p>
-                </div>
-                <div class="prosjekt-boks">
+                <div class = "prosjekter-bokser">
+                <div class="prosjekt-boks" id="prosjekt1">
+                    <h3><strong>Markitelligence</strong></h3>
+                    <p>Markitelligence er en plattform som analyser og strategier for å øke synlighet og salg.</p>
+                    <button class="les-mer-knapp" aria-label="Les mer om Markitelligence" onclick="apneModal('modal-prosjekt1')"></button> 
+                    </div>
+                <div class="prosjekt-boks" id="prosjekt2">
                     <h3>Prosjekt 2</h3>
                     <p>Beskrivelse av prosjekt 2.</p>
+                    <button class="les-mer-knapp" aria-label="Les mer om Prosjekt 2" onclick="apneModal('modal-prosjekt2')"></button>
                 </div>
-                <div class="prosjekt-boks"> 
+                <div class="prosjekt-boks" id="prosjekt3"> 
                     <h3>Prosjekt 3</h3>
                     <p>Beskrivelse av prosjekt 3.</p>
+                    <button class="les-mer-knapp" aria-label="Les mer om Prosjekt 3" onclick="apneModal('modal-prosjekt3')"></button>
                 </div>
-                <div class="prosjekt-boks">
+                <div class="prosjekt-boks" id="prosjekt4">
                     <h3>Prosjekt 4</h3>
                     <p>Beskrivelse av prosjekt 4.</p>
+                    <button class="les-mer-knapp" aria-label="Les mer om Prosjekt 4" onclick="apneModal('modal-prosjekt4')"></button>
                 </div>
+                    <div id="modal-prosjekt1" class="modal" onclick="lukkModal('modal-prosjekt1')">
+                        <div class="modal-innhold" onclick="event.stopPropagation()">
+                        <button class="lukk" aria-label="Lukk modal" onclick="lukkModal('modal-prosjekt1')">&times;</button>
+                            <h2>Markitelligence</h2>
+                            <p>Markitelligence er en egenutviklet webapp som lar deg søke etter annonser og analysere trender og data.</p>
+                        </div>
+                    </div>
+                    <div id="modal-prosjekt2" class="modal" onclick="lukkModal('modal-prosjekt2')">
+                        <div class="modal-innhold" onclick="event.stopPropagation()">
+                        <button class="lukk" aria-label="Lukk modal" onclick="lukkModal('modal-prosjekt2')">&times;</button>
+                            <h2>Prosjekt 2</h2>
+                            <p>Beskrivelse av prosjekt 2.</p>
+                        </div>
+                    </div>
+                    <div id="modal-prosjekt3" class="modal" onclick="lukkModal('modal-prosjekt3')">
+                        <div class="modal-innhold" onclick="event.stopPropagation()">
+                        <button class="lukk" aria-label="Lukk modal" onclick="lukkModal('modal-prosjekt3')">&times;</button>
+                            <h2>Prosjekt 3</h2>
+                            <p>Beskrivelse av prosjekt 3.</p>
+                        </div>
+                    </div>
+                    <div id="modal-prosjekt4" class="modal" onclick="lukkModal('modal-prosjekt4')">
+                        <div class="modal-innhold" onclick="event.stopPropagation()">
+                        <button class="lukk" aria-label="Lukk modal" onclick="lukkModal('modal-prosjekt4')">&times;</button>
+                            <h2>Prosjekt 4</h2>
+                            <p>Beskrivelse av prosjekt 4.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="ferdigheter" class="ferdigheter">
